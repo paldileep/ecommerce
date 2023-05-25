@@ -1,0 +1,129 @@
+#cartheading{
+  text-align: center;
+  font-size: 40px;
+}
+
+.cart{ 
+
+  
+
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 10rem;
+    padding: 0 5rem 0 5rem;
+
+    .cart_products { 
+
+     
+
+      display: grid;
+      grid-template-columns: auto; 
+
+      
+
+        .product { 
+
+            //border: 1px solid black;
+
+            margin-bottom: 10px;
+
+            display: grid;
+            padding: 5px;
+            border: 1px solid lightgray;
+
+            .cart_card{ 
+
+              
+              display: grid;
+              grid-template-columns: 1fr 3fr;
+              justify-content: center;
+              gap:2rem;
+              
+
+                img{ 
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+
+                .item_details{ 
+
+                  .price_quantity{ 
+
+                      display: flex;
+                      gap:5rem
+                  }
+
+                  button{ 
+                      padding: 7px 10px 7px 10px;
+                      border-radius: 5px;
+                      cursor: pointer;
+                      border: none;
+                      background-color: rgb(245, 194, 194);
+                  }
+                }
+
+            }
+            
+        }
+    }
+
+    .billing { 
+      border: 1px solid lightgray;
+      padding: 0 20px 0 20px;
+
+      // position: fixed;
+      // top: 30% ;
+      // left: 70%;
+
+      .breakup{ 
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .label{ 
+          display: flex;
+          flex-direction: column;
+        }
+
+        .amount{ 
+
+            display: flex;
+            flex-direction: column;
+
+            text-align: end;
+           
+
+            .tax{ 
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              gap: 1rem;
+              
+              #gst{
+                font-size: 10px;
+                font-style: italic;
+              }
+            }
+        }
+      }
+
+      .action{ 
+
+          display: grid;
+          
+
+          button{ 
+            padding: 10px 10px 10px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: lightgreen;
+            border: none
+          }
+      }
+    }
+}
+
+#emptyCartMessage{ 
+  text-align: center;
+}

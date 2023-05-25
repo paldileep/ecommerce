@@ -1,0 +1,14 @@
+.footer{ 
+  margin-top: 5%;
+  height: 30vh;
+  background-color: #181818;
+  color:white;
+  text-align: center;
+  padding-top: 5%;
+  .links { 
+
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+  }
+}

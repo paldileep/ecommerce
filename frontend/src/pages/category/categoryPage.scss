@@ -1,0 +1,50 @@
+.category { 
+
+  height: 100%;
+
+  h1{ 
+    text-align: center;
+  }
+
+  .cat_section1 { 
+
+      .heading{ 
+        text-align: center;
+      }
+
+      .cat_container{ 
+        
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+       
+        
+        .filter_section{
+
+          margin: 0px;
+          
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap:1rem;
+         
+        }
+
+        .cat_card_section{ 
+       
+          border: 1px solid lightgray;
+
+          display: grid ;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap:1rem;
+          padding: 3rem;
+          justify-items: center;
+
+          .cat_productCard{ 
+            cursor: pointer;
+          }
+       
+        }
+      }
+  }
+ 
+}

@@ -1,0 +1,105 @@
+@import '../../scss/partial/color';
+
+
+.navbar { 
+    background-color: $navbarBackgroundColor;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+
+    #logo{ 
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .menu{ 
+        display: flex;
+        gap:1rem;
+        
+        
+    } 
+    .menu > * {
+        text-decoration: none;
+        color: black; 
+    }
+
+    .search{
+        
+        .inputbox{ 
+
+            display: flex;
+            align-items: center;
+            border: 1px solid $borderOutlineColor;
+            background-color: $backgroundWhite;
+            padding: 8px;
+            border-radius: 5px;
+
+            input{ 
+               
+                border: none;
+
+            }
+            input:focus{ 
+                outline: none;
+            }
+
+        }
+        
+    }
+
+    .cartbar{ 
+
+        display: flex;
+        gap:1rem;
+        align-items: center;
+
+
+        .login{ 
+
+            display: flex;
+            height: 3vh;
+
+            .profile{ 
+                display: flex;
+                align-items: center;
+                gap:10px;
+                
+                button{ 
+                    cursor: pointer;
+                }
+            }
+
+            
+
+            #btnlogin, #btnsignup{ 
+                text-decoration: none;
+                background-color: $lightSkyBlue;
+                cursor: pointer;
+                padding: 9px;
+                margin-left: 5px;
+                border-radius: 5px;
+                color:black;
+                font-size: 14px;
+            }
+
+            img{ 
+                height: 100%;
+                border-radius: 50%;   
+                cursor: pointer; 
+            }
+        }
+
+        button{ 
+            border: none;
+        }
+
+        //cart button 
+        .bag{ 
+            cursor: pointer;
+        }
+    }
+}

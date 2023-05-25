@@ -1,0 +1,11 @@
+@import '../../../scss/partial/color';
+
+.notice{ 
+
+    padding: 1px;
+    background-color: $lightSkyBlue;
+
+    p{ 
+        text-align: center;
+    }
+}
