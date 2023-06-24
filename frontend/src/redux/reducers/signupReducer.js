@@ -35,3 +35,7 @@ export const signupState = state => state.signup.user
 export const { signup, logout } = signupReducer.actions
 
 export default signupReducer.reducer
+
+
+
+
